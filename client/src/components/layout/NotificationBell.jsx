@@ -1,14 +1,11 @@
- 
-
-
-import { Bell, Check, Info, Trash2, X } from 'lucide-react';
+ import { Bell, Check, Info, Trash2, X } from 'lucide-react';
 import { useEffect, useRef, useState } from 'react';
 import { useSelector } from 'react-redux';
 import { toast } from 'react-toastify';
 import io from 'socket.io-client';
 
 // Initialize Socket once
-const socket = io.connect("http://localhost:5000");
+const socket = io.connect("http://localhost:3000");
 
 export default function NotificationBell() {
     const { user } = useSelector((state) => state.auth);

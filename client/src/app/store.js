@@ -5,6 +5,7 @@ import holidayReducer from '../features/holidays/holidaySlice';
 import staffReducer from '../features/staff/staffSlice'; // Import
 import studentReducer from '../features/students/studentSlice';
 import universityReducer from '../features/universities/universitySlice';
+import eventReducer from '../features/events/eventSlice';
 
 export const store = configureStore({
   reducer: {
@@ -14,5 +15,6 @@ export const store = configureStore({
     staff: staffReducer, 
     universities: universityReducer,
     holidays: holidayReducer,
+    events: eventReducer,
   },
 });

@@ -62,6 +62,7 @@ app.use('/api/public', publicRoutes);
 app.use('/api/universities', universityRoutes);
 app.use('/api/holidays', holidayRoutes);
 app.use('/api/ai', aiRoutes);
+app.use('/api/events', require('./routes/eventRoutes'));
 
 
 app.get('/', (req, res) => {
